@@ -1,0 +1,19 @@
+//Create a function using an array that returns the biggest number from that array of numbers. //
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {12, 16, 87, 13, 360, 220, 387, 23, 40};
+        int maxFound = findMax(numbers);
+        System.out.println(maxFound);
+    }
+
+    public static int findMax(int[] numbers) {
+        int max = numbers[0];
+        for (int number : numbers) {
+            if (number > max) {
+                max = number;
+            }
+        }
+        return max;
+    }
+}
